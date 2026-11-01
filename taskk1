@@ -1,146 +1,253 @@
 
-<!doctype html>
+<!DOCTYPE html>
 <html>
 <head>
-    </head>
-    
+    <title>Personal Portfolio Website</title>
 
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #f2f2f2;
-}
+    <style>
 
-/* Navigation Bar */
-nav {
-    background-color: #222;
-    color: white;
-    padding: 15px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-}
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+        }
 
-nav ul {
-    list-style: none;
-    display: flex;
-    flex-wrap: wrap;
-}
+        /* Navigation Bar */
+        nav {
+            background-color: #222;
+            color: white;
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
 
-nav ul li {
-    margin: 8px;
-}
+        nav ul {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+        }
 
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    padding: 8px;
-    transition: 0.3s;
-}
+        nav ul li {
+            margin: 8px;
+        }
 
-/* Interactive Navigation Effect */
-nav ul li a:hover {
-    color: yellow;
-    background-color: #444;
-    border-radius: 5px;
-}
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 8px;
+            transition: 0.3s;
+        }
 
-/* Common Section Styling */
-section {
-    padding: 40px;
-    margin: 20px;
-    text-align: center;
-    background-color: white;
-    border-radius: 10px;
-    animation: fadeIn 1.5s;
-}
+        /* Navigation Hover Effect */
+        nav ul li a:hover {
+            color: yellow;
+            background-color: #444;
+            border-radius: 5px;
+        }
 
-/* Home Section */
-#home {
-    background-color: #dbeafe;
-    padding: 80px 20px;
-}
+        /* Common Section Styling */
+        section {
+            padding: 40px;
+            margin: 20px;
+            text-align: center;
+            background-color: white;
+            border-radius: 10px;
+            animation: fadeIn 1.5s;
+        }
 
-#home h1 {
-    color: #1d4ed8;
-}
+        /* Home Section */
+        #home {
+            background-color: #dbeafe;
+            padding: 80px 20px;
+        }
 
-/* Buttons */
-.btn {
-    display: inline-block;
-    background-color: #2563eb;
-    color: white;
-    padding: 12px 20px;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: 0.3s;
-}
+        #home h1 {
+            color: #1d4ed8;
+        }
 
-.btn:hover {
-    background-color: #1e3a8a;
-    transform: scale(1.05);
-}
+        /* Buttons */
+        .btn {
+            display: inline-block;
+            background-color: #2563eb;
+            color: white;
+            padding: 12px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
 
-/* Content Boxes */
-.box {
-    background-color: #e0f2fe;
-    padding: 20px;
-    margin: 15px auto;
-    max-width: 500px;
-    border-radius: 8px;
-    transition: 0.3s;
-}
+        .btn:hover {
+            background-color: #1e3a8a;
+            transform: scale(1.05);
+        }
 
-.box:hover {
-    transform: translateY(-5px);
-    background-color: #bfdbfe;
-}
+        /* Content Boxes */
+        .box {
+            background-color: #e0f2fe;
+            padding: 20px;
+            margin: 15px auto;
+            max-width: 500px;
+            border-radius: 8px;
+            transition: 0.3s;
+        }
 
-/* CSS Animation */
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
+        .box:hover {
+            transform: translateY(-5px);
+            background-color: #bfdbfe;
+        }
 
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
+        /* CSS Animation */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
 
-/* Footer */
-footer {
-    background-color: #222;
-    color: white;
-    text-align: center;
-    padding: 15px;
-}
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
 
-/* Responsive Layout */
-@media screen and (max-width: 600px) {
+        /* Footer */
+        footer {
+            background-color: #222;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
 
-    nav {
-        flex-direction: column;
-    }
+        /* Responsive Layout */
+        @media screen and (max-width: 600px) {
 
-    nav ul {
-        flex-direction: column;
-        padding: 0;
-        text-align: center;
-    }
+            nav {
+                flex-direction: column;
+            }
 
-    nav ul li {
-        margin: 5px;
-    }
+            nav ul {
+                flex-direction: column;
+                padding: 0;
+                text-align: center;
+            }
 
-    section {
-        padding: 20px;
-        margin: 10px;
-    }
+            nav ul li {
+                margin: 5px;
+            }
 
-    .box {
-        width: auto;
-    }
-}
+            section {
+                padding: 20px;
+                margin: 10px;
+            }
+
+            .box {
+                width: auto;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <h2>My Portfolio</h2>
+
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home">
+
+        <h1>Welcome to My Portfolio</h1>
+
+        <h2>Hello, I am a CSE AIML Student</h2>
+
+        <p>
+            Welcome to my personal portfolio website.
+            I am interested in programming and web development.
+        </p>
+
+        <a href="#about" class="btn">Know More</a>
+
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+
+        <h2>About Me</h2>
+
+        <div class="box">
+            <p>
+                I am a first-year Computer Science student
+                specializing in Artificial Intelligence and
+                Machine Learning.
+            </p>
+        </div>
+
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+
+        <h2>My Skills</h2>
+
+        <div class="box">
+            <p>HTML</p>
+            <p>CSS</p>
+            <p>Python Programming</p>
+            <p>Basic Computer Skills</p>
+        </div>
+
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+
+        <h2>My Projects</h2>
+
+        <div class="box">
+            <h3>Personal Portfolio Website</h3>
+            <p>A simple website created using HTML and CSS.</p>
+        </div>
+
+        <div class="box">
+            <h3>Student Academic Dashboard</h3>
+            <p>A dashboard to display student academic details.</p>
+        </div>
+
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+
+        <h2>Contact Me</h2>
+
+        <div class="box">
+            <p>Email: student@example.com</p>
+            <p>Department: CSE - AIML</p>
+        </div>
+
+        <a href="mailto:student@example.com" class="btn">
+            Send Email
+        </a>
+
+    </section>
+
+    <!-- Footer -->
+    <footer>
+
+        <p>© 2026 My Portfolio Website</p>
+
+    </footer>
+
+</body>
+</html>
